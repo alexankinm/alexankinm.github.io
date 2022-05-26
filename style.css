@@ -1,0 +1,184 @@
+/*
+ * Start CRT
+ * http://aleclownes.com/2017/02/01/crt-display.html
+ */
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+@keyframes textShadow {
+  0% {
+    text-shadow: 0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+      -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  5% {
+    text-shadow: 2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+      -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  10% {
+    text-shadow: 0.02956275843481219px 0 1px rgba(0, 30, 255, 0.5),
+      -0.02956275843481219px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  15% {
+    text-shadow: 0.40218538552878136px 0 1px rgba(0, 30, 255, 0.5),
+      -0.40218538552878136px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  20% {
+    text-shadow: 3.4794037899852017px 0 1px rgba(0, 30, 255, 0.5),
+      -3.4794037899852017px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  25% {
+    text-shadow: 1.6125630401149584px 0 1px rgba(0, 30, 255, 0.5),
+      -1.6125630401149584px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  30% {
+    text-shadow: 0.7015590085143956px 0 1px rgba(0, 30, 255, 0.5),
+      -0.7015590085143956px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  35% {
+    text-shadow: 3.896914047650351px 0 1px rgba(0, 30, 255, 0.5),
+      -3.896914047650351px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  40% {
+    text-shadow: 3.870905614848819px 0 1px rgba(0, 30, 255, 0.5),
+      -3.870905614848819px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  45% {
+    text-shadow: 2.231056963361899px 0 1px rgba(0, 30, 255, 0.5),
+      -2.231056963361899px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  50% {
+    text-shadow: 0.08084290417898504px 0 1px rgba(0, 30, 255, 0.5),
+      -0.08084290417898504px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  55% {
+    text-shadow: 2.3758461067427543px 0 1px rgba(0, 30, 255, 0.5),
+      -2.3758461067427543px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  60% {
+    text-shadow: 2.202193051050636px 0 1px rgba(0, 30, 255, 0.5),
+      -2.202193051050636px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  65% {
+    text-shadow: 2.8638780614874975px 0 1px rgba(0, 30, 255, 0.5),
+      -2.8638780614874975px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  70% {
+    text-shadow: 0.48874025155497314px 0 1px rgba(0, 30, 255, 0.5),
+      -0.48874025155497314px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  75% {
+    text-shadow: 1.8948491305757957px 0 1px rgba(0, 30, 255, 0.5),
+      -1.8948491305757957px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  80% {
+    text-shadow: 0.0833037308038857px 0 1px rgba(0, 30, 255, 0.5),
+      -0.0833037308038857px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  85% {
+    text-shadow: 0.09769827255241735px 0 1px rgba(0, 30, 255, 0.5),
+      -0.09769827255241735px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  90% {
+    text-shadow: 3.443339761481782px 0 1px rgba(0, 30, 255, 0.5),
+      -3.443339761481782px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  95% {
+    text-shadow: 2.1841838852799786px 0 1px rgba(0, 30, 255, 0.5),
+      -2.1841838852799786px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  100% {
+    text-shadow: 2.6208764473832513px 0 1px rgba(0, 30, 255, 0.5),
+      -2.6208764473832513px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+}
+.crt {
+  animation: textShadow 1.6s infinite;
+}
+
+/* End CRT */
+
+body {
+  color: #fafafa;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+  background-repeat: no-repeat;
+  font-size: 1.3rem;
+  line-height: 1.25em;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+main {
+  max-width: 60vw;
+  margin: auto 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 1.8rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  margin-top: 0.5rem;
+}
+
+li {
+  margin: 0.2rem 0;
+}
+
+li::marker {
+  content: "-  ";
+}
+
+.inline-icon {
+  height: 1em;
+  display: inline-block;
+  transform: translateY(0.09em);
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/lexend-deca-v10-latin-regular.woff2") format("woff2"),
+    url("../fonts/lexend-deca-v10-latin-regular.woff") format("woff");
+}
+
+/*# sourceMappingURL=style.css.map */
